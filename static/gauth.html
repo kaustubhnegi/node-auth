@@ -1,0 +1,74 @@
+<html>
+   
+       <head>      
+          <meta name="google-signin-scope" content="profile email">
+          <meta name="google-signin-client_id" content="MY_CLIENT_ID_ON_GOOGLE_DEV.apps.googleusercontent.com">
+          <!-- To integrate Google Sign-in -->
+          <script src="https://apis.google.com/js/api.js"></script>
+          <script src="https://apis.google.com/js/platform.js" async defer></script>
+       </head>
+       <body>
+          <!-- <div class="g-signin2" data-onsuccess="onSignIn"></div> -->
+          <div class="row">
+  <div class="col-md-3">
+    <a class="btn btn-outline-dark"  href="users/googleauth"  role="button" style="text-transform:none">
+      <img width="20px" style="margin-bottom:3px; margin-right:5px" class="center"  alt="Google sign-in" src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/Google_%22G%22_Logo.svg/512px-Google_%22G%22_Logo.svg.png" />
+      Login with Google
+    </a>
+  </div>
+</div> 
+
+<div class="col-sm-4">
+    <div class="card">
+      <div class="card-body">
+        <a class="btn btn-block btn-social btn-google" href="/auth/google" role="button">
+          <i class="fab fa-google"></i>
+          Sign Up with Google
+        </a>
+      </div>
+  
+    </div>
+  </div>
+
+<!-- <script>
+    const form = document.getElementById('reg-form')
+    form.addEventListener('submit', registerUser)
+
+    // 1. send data as json (very common when you are using js)
+    // 2. send data as urlencoded ( very common when using php)
+   async function registerUser  (event) {
+        event.preventDefault()
+        
+        const username = document.getElementById('username')
+        const password = document.getElementById('password')
+
+      const result = await fetch('/api/register', {
+            method: 'POST',
+            headers:  {
+                
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify({
+                username,
+                password
+            })
+        }).then()
+    }
+
+</script> -->
+
+
+<!-- Minified CSS and JS -->
+<link   rel="stylesheet" 
+        href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" 
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" 
+        crossorigin="anonymous">
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" 
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" 
+        crossorigin="anonymous">
+</script>
+       </body>
+    </html>
+
+
+    
